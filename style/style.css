@@ -8,6 +8,11 @@
     box-sizing:border-box;
 }
 
+:root{
+    --bg-color:#2D25A0;
+    --content-bg-color:rgba(235, 235, 226, 0.568);
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 
@@ -32,9 +37,335 @@ img{
 
 .container{
     width:1162px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    margin:auto;
 }
 /* utilities-part-end */
+
+/* header & navigation-bar-start */
+.header-bg{
+    background-color:var(--bg-color);
+    padding-top:42px ;
+    
+}
+.header-nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+   
+}
+
+.navbar>nav>ul{
+    display:flex;
+
+}
+.navbar>nav>ul>li{
+    margin-right:2rem;
+}
+.navbar>nav>ul>li>a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.header-nav>.navbar-login>button{
+    background-color:#E02C6D;
+    color: #FFFFFF;
+    width: 123px;
+    height: 44px;
+    border:none;
+    border-radius:5px;
+}
+.header-nav>.navbar-login>button>i{
+    margin-right:5px;
+    
+}
+/* header & navigation-bar-end */
+
+/* copa-america-part-start */
+.copa__america--bg{
+    background-color:var(--bg-color);
+    padding-bottom:114px;
+}
+.copa__america{
+    display:flex;
+}
+.copa__america>.copa__america__content{
+    margin-top:121px;
+    width:50%;
+}
+.copa__america__content>.copa__america__content--title{
+width:90%;
+font-weight: bold;
+font-size: 64px;
+color:#FFFFFF;
+line-height: 80px;
+margin-bottom:27px;
+}
+.copa__america__content>a{
+    width: 168px;
+    height: 44px;
+    background-color:#E02C6D;
+    color:#FFFFFF;
+    padding: 10px 24px;
+    border-radius:5px;
+}
+.copa__america>.copa__america--img{
+    margin-top:67px;
+    width:50%;
+}
+.copa__america>.copa__america--img>img{
+    width: 556.01px;
+    height: 438px;
+}
+/* copa-america-part-end */
+
+/* copa-america-top-player-list-part-start */
+.top__player--bg{
+    background-color:var(--content-bg-color);
+    padding-top:5rem;
+    padding-bottom:165px;
+}
+.top__player{
+    display:grid;
+    grid-template-columns: repeat(3,330px);
+    grid-gap:30px;
+    align-items:center;    
+  
+}
+.top__player>.top__player__title{
+    grid-column: 1/-1;
+}
+.top__player>.top__player__title{
+    font-size: 46px;
+    font-weight: 700;
+    color: #173562;
+}
+.top__player__item{
+    width: 330px;
+    height: 474px;
+    padding:15px;
+    background-color:white;
+
+}
+
+.top__player__item--img>img{
+    width: 300px;
+    height: 256px;
+  
+}
+
+.top__player__item--content>h2{
+    margin-bottom:8px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+.top__player__item--content>p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+/* copa-america-top-player-list-part-end */
+
+/* copa-america-highlights-part-start */
+.copa__highlight--bg{
+    background-color:var(--content-bg-color);
+    padding-bottom:158px;
+}
+.copa__highlight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+}
+.copa__highlight__content{
+    width:50%;
+    margin-right:66px;
+    
+     
+}
+.copa__highlight__content>h1{
+    margin-bottom:8px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+}
+.copa__highlight__content>p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom:24px;    
+}
+.copa__highlight__content>a{
+    width: 168px;
+    height: 44px;
+    background-color:#E02C6D;
+    color:#FFFFFF;
+    padding: 10px 24px;
+    border-radius:5px;
+
+    
+}
+
+.copa__highlight__img{
+    width:50%;
+}
+
+.copa__highlight__img>img{
+    width: 567px;
+    height: 427px;
+}
+/* copa-america-highlights-part-end */
+
+/* groups-schedule-part-start */
+.group__bg{
+    background-color:var(--content-bg-color);
+}
+.group{
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+}
+.group>.group__header{
+    grid-column: 1/-1;
+    justify-self: center;
+}
+.group>.group__header>h1{
+    font-size: 46px;
+    font-weight: 700;
+    color: #173562;
+}
+.group>.group-title{
+    grid-column:1/-1;
+   
+}
+
+.group>.group-title>h2{
+    font-size: 46px;
+    font-weight: 700;
+    color: #173562;
+   
+}
+.group>.group-date{
+    grid-column:1/-1;
+}
+.group>.group-date>span{
+    font-size: 24px;
+    font-weight: 700;
+    color: #505050;
+}
+.group>.group__schedule{
+    background-color:#ffff;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgb(44 62 80 / 50%);
+}
+
+.group__schedule>.group__schedule__title>h3{
+    color: #6f6f6f;
+    font-size: 18px;
+    width: 250px;
+}
+
+.group>.group__schedule>.country__img>img{
+    width:5rem;
+}
+
+
+.group>.group__schedule>.group__score>span{
+    color: #b1b1b1;
+    font-size: 60px;
+}
+/* groups-schedule-part-end */
+
+/* official-sponsors-part-start */
+.sponsor__bg{
+    background-color:var(--content-bg-color);
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+.sponsor{
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+}
+.sponsor>.sponsor__title{
+    grid-column:1/-1;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+.sponsor>.sponsor__title>h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: #173562;
+
+}
+
+.sponsor>.sponsor__partner>ul{
+    display:flex;
+    justify-content: space-between;
+}
+.sponsor>.sponsor__partner>ul>li{
+    margin-right: 20px;
+}
+
+.sponsor>.sponsor__partner>ul>li>a>img{
+    width:90px;
+}
+/* official-sponsors-part-end */
+
+/* copa-america-footer-part-start */
+.copa__america__footer--bg{
+    background-color:#FFFFFF;
+    padding-top:2rem;
+    padding-bottom:63px;
+}
+.copa__america__footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+.copa__america__footer--img{
+    margin-bottom:20px;
+
+}
+.copa__america__footer--img>img{
+    width: 483.87px;
+    height: 110px;
+}
+.copa__america__social--icon{
+    width: 170px;
+    height: 32px;
+    margin-bottom:20px;
+}
+.copa__america__social--icon>ul{
+    display:flex;
+    flex-direction:row;
+}
+.copa__america__social--icon>ul>li{
+    margin-right:14px;
+}
+
+.copa__america__social--icon>ul>li>a>i{
+    width:32px;
+    height:32px;
+    font-size:32px;
+    color:#969BAB;
+}
+
+.footer__content>p{
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+/* copa-america-footer-part-end */
